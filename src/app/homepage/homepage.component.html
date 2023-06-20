@@ -48,6 +48,9 @@
                     <div *ngIf="project.webScreenshot" class="center web">
                         <img [src]="project.webScreenshot">
                     </div>
+                    <div *ngIf="project.webVideo" class="center web">
+                        <video #video [src]="project.webVideo" [muted]="true" autoplay playsinline loop></video>
+                    </div>
                     <div *ngIf="project.centeredVideo" class="center">
                         <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop></video>
                     </div>

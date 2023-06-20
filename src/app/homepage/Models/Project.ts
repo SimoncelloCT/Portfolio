@@ -3,6 +3,7 @@ export interface Project{
     rightScreenshot?: string,
     centeredScreenshots?: string[],
     webScreenshot?: string,
+    webVideo?: string; 
     fullscrenImage?: string; //used for website project
     centeredVideo?: string; 
     title: string,

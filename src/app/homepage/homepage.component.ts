@@ -45,6 +45,19 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "database", title: "Firebase" },{ icon: "database", title: "Firestore" }, { icon: "notifications", title: "APNs" },{ icon: "code_blocks", title: "Angular" }, { icon: "code", title: "Typescript" }, { icon: "dns", title: "NodeJS" }]
     },
     {
+      icon: "../../assets/logicgame/logo.png",
+      title: 'LogicGame',
+      subtitle: 'A complete platform to make live quiz about logic circuits and Boolean algebra',
+      leftScreenshot: "../../assets/logicgame/screen1.png",
+      rightScreenshot: "./../assets/logicgame/screen2.png",
+      webVideo: "./../assets/logicgame/video.mov",
+      gradientColor: "#173215",
+      textGradientColor: "#abefa5",
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "edit_calendar", description: "Prepare circuits for your students" }, { icon: "quiz", description: "Make live and fun quiz" }, { icon: "stars", description: "Allow students practice with boolean algebra and logic circuits" },{ icon: "timeline", description: "Real-time insights about who is the best student in the room" },{ icon: "phone_iphone", description: "Android and iOS native apps" }],
+      skills: [{ icon: "code", title: "HTML" }, { icon: "code", title: "Javascript" }, { icon: "code", title: "CSS" },{ icon: "code_blocks", title: "JQuery" },{ icon: "code", title: "Canvas" },{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "code", title: "Java" }, { icon: "code_blocks", title: "Android" },{ icon: "database", title: "Firebase" }]
+    },
+    {
       icon: "../../assets/runkick/icon.jpg",
       title: 'Runkick',
       subtitle: 'A multiplayer football videogame to test your reflexes',
@@ -60,6 +73,23 @@ export class HomepageComponent {
       buttonsColor: "#88c9fa51",
       featureSections: [{ icon: "sports_soccer", description: "Challenge yourself in single player mode" }, { icon: "groups", description: "Play against people all over the world" }, { icon: "group", description: "Challenge your facebook friends" }, { icon: "workspace_premium", description: "See your worldwide leaderboard position" }],
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" }, { icon: "code_blocks", title: "SpriteKit" },{ icon: "database", title: "Firebase" },{ icon: "cycle", title: "ARC Management" }]
+    },
+    {
+      icon: "../../assets/flue/icon.jpg",
+      title: 'Flue',
+      subtitle: 'A mind-blowing 3D video game that will get you hooked',
+      leftScreenshot: "../../assets/flue/screen1.jpg",
+      rightScreenshot: "./../assets/flue/screen2.jpg",
+      centeredVideo: "../../assets/flue/video.mov",
+      // links: [
+      //   { type: "AppStore", url: "https://apps.apple.com/it/app/studium-unict/id1510024640?l=en}", text: "See on App Store" },
+      //   { type: "Web", url: "https://www.cataniatoday.it/cronaca/universita-l-app-studium-unict-disponibile-anche-per-i-dispositivi-apple.html", text: "Newspaper Article" },
+      // ],
+      gradientColor: "#64a8a8",//"#73B92F",
+      textGradientColor: "#9eeded",
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "sports_soccer", description: "Challenge yourself in single player mode" }, { icon: "timer", description: "The more time passes, the tougher the challenge gets" }, { icon: "egg", description: "Discover the \"easter egg\" hidden after many levels" }, { icon: "align_horizontal_left", description: "Dodge the obstacles and keep your color" }],
+      skills: [{ icon: "code", title: "C#" }, { icon: "code_blocks", title: "Unity" }, { icon: "cycle", title: "Multithreading" }]
     },
     {
       icon: "../../assets/steganography/icon.png",
