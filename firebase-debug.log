@@ -1,0 +1,35 @@
+[debug] [2023-06-20T11:03:23.757Z] ----------------------------------------------------------------------
+[debug] [2023-06-20T11:03:23.761Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-06-20T11:03:23.762Z] CLI Version:   12.4.0
+[debug] [2023-06-20T11:03:23.762Z] Platform:      darwin
+[debug] [2023-06-20T11:03:23.762Z] Node Version:  v20.3.0
+[debug] [2023-06-20T11:03:23.762Z] Time:          Tue Jun 20 2023 13:03:23 GMT+0200 (Central European Summer Time)
+[debug] [2023-06-20T11:03:23.762Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-20T11:03:23.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-20T11:03:23.846Z] > authorizing via signed-in user (simoncello98@yahoo.it)
+[debug] [2023-06-20T11:03:23.846Z] [iam] checking project portfolio-34970 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-20T11:03:23.848Z] > refreshing access token with scopes: []
+[debug] [2023-06-20T11:03:23.850Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-20T11:03:23.850Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-20T11:03:24.123Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-20T11:03:24.123Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-20T11:03:24.145Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-34970:testIamPermissions [none]
+[debug] [2023-06-20T11:03:24.145Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-34970:testIamPermissions x-goog-quota-user=projects/portfolio-34970
+[debug] [2023-06-20T11:03:24.145Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-34970:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-20T11:03:24.441Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-34970:testIamPermissions 200
+[debug] [2023-06-20T11:03:24.441Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-34970:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-20T11:03:24.442Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-34970 [none]
+[debug] [2023-06-20T11:03:24.780Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-34970 200
+[debug] [2023-06-20T11:03:24.781Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-34970 {"projectId":"portfolio-34970","projectNumber":"325450451228","displayName":"Portfolio","name":"projects/portfolio-34970","resources":{"hostingSite":"portfolio-34970"},"state":"ACTIVE","etag":"1_3a9ed7fc-90f9-4fd9-8ae8-cbf2c48c580a"}
+[info] 
+[info] === Deploying to 'portfolio-34970'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-20T11:03:24.788Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-34970/versions [none]
+[debug] [2023-06-20T11:03:24.788Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-34970/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-20T11:03:25.940Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-34970/versions 200
+[debug] [2023-06-20T11:03:25.940Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-34970/versions {"name":"projects/325450451228/sites/portfolio-34970/versions/2108ffbebe7141ec","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[portfolio-34970]: beginning deploy... 
+[info] i  hosting[portfolio-34970]: found 36 files in public 
+[debug] [2023-06-20T11:03:25.953Z] [hosting] uploading with 200 concurrency

@@ -1,98 +1,105 @@
 <body>
-    <section class="error">
-            <div class="main-tip">
-                <p class="text-tip text-gradient-h">This device is too small</p>
-                <p class="text-tip"> Please use a laptop or a tablet to see my portfolio</p>
-            </div>
-    </section>
-    
-    <section class="header">
-        <div class="self-description">
-            <img src="../../assets/Profile.jpg" alt="Profile Image">
-            <p class="name">Simone Scionti</p>
-            <p class="job-title">Software Engineer</p>
+    <div class="homepage">
+        <section class="header">
+            <div class="self-description">
+                <img src="../../assets/Profile.jpg" alt="Profile Image">
+                <p class="name">Simone Scionti</p>
+                <p class="job-title">Software Engineer</p>
 
-            <div class="main-tip">
-                <p class="text-tip text-gradient-h">What inspires me?</p>
-                <p class="text-tip"> Walking around and see people using the product I've worked on</p>
+                <div class="main-tip">
+                    <p class="text-tip text-gradient-h">What inspires me?</p>
+                    <p class="text-tip"> Walking around and see people using the product I've worked on</p>
+                </div>
+
             </div>
+            <br>
+        </section>
+        <section class="portfolio">
+            <p class="section-title">Some of my projects</p>
+            <div *ngFor="let project of projects" class="project"
+                [style.background]="'linear-gradient(#000000,'+project.gradientColor+' , '+project.gradientColor+', #000000)'">
+                <div class="trademark">
+                    <img [src]="project.icon" class="icon">
+                    <p class="app-title">{{project.title}}</p>
+                </div>
+
+                <p class="app-subtitle text-gradient"
+                    [style.background]="'linear-gradient(to bottom,#FFFFFF , '+project.textGradientColor+')'">
+                    {{project.subtitle}}
+                </p>
+
+                <div class="links">
+                    <div *ngFor="let link of project.links" class="card"
+                        [style.background-color]="project.buttonsColor">
+                        <a [href]="link.url">{{link.text}}</a>
+                    </div>
+                </div>
+                <div *ngIf="!project.links">
+                    <br><br>
+                </div>
+
+                <div class="screenshots">
+                    <div class="lateral">
+                        <img [src]="project.leftScreenshot">
+                    </div>
+                    <div *ngFor="let screen of project.centeredScreenshots" class="center">
+                        <img [src]="screen">
+                    </div>
+                    <div *ngIf="project.webScreenshot" class="center web">
+                        <img [src]="project.webScreenshot">
+                    </div>
+                    <div *ngIf="project.centeredVideo" class="center">
+                        <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop></video>
+                    </div>
+
+                    <div class="lateral">
+                        <img [src]="project.rightScreenshot">
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div *ngFor="let feature of project.featureSections" class="feature">
+                        <mat-icon>{{feature.icon}}</mat-icon>
+                        <p class="text-tip text-gradient"
+                            [style.background]="'linear-gradient(to bottom,#FFFFFF , '+project.textGradientColor+')'">
+                            {{feature.description}}
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="skills">
+                    <div *ngFor="let skill of project.skills" class="skill card"
+                        [style.background-color]="project.buttonsColor">
+                        <span class="material-symbols-outlined">{{skill.icon}}</span>
+
+                        <p class="text-tip text-gradient"
+                            [style.background]="'linear-gradient(to right,#FFFFFF , '+project.textGradientColor+')'">
+                            {{skill.title}}
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+        <div class="main-tip end-tips">
+            <p class="end-title">If you are reading this, Thank you!</p>
+            <br>
+            <p class="text-tip text-gradient-v">You have glimpsed some of the projects I have pursued out of personal
+                interest and as a freelancer. Regrettably, I am unable to showcase the projects I have worked on
+                professionally due to privacy agreements. Nevertheless, I believe my worth extends beyond the sum of the
+                projects I have undertaken. It lies in the accumulation of knowledge and skills derived from each
+                endeavor, amplified by the unwavering passion and fueled by an insatiable desire to learn and create. I
+                look forward to the opportunity to connect with you again soon!</p>
 
         </div>
-        <br>
-    </section>
-    <section class="portfolio">
-        <p class="section-title">Some of my projects</p>
-        <div *ngFor="let project of projects" class="project" [style.background]="'linear-gradient(#000000,'+project.gradientColor+' , '+project.gradientColor+', #000000)'">
-            <div class="trademark">
-                <img [src]="project.icon" class="icon">
-                <p class="app-title">{{project.title}}</p>
-            </div>
-         
-            <p class="app-subtitle text-gradient" [style.background]="'linear-gradient(to bottom,#FFFFFF , '+project.textGradientColor+')'" >
-                {{project.subtitle}}
-            </p>
-
-            <div class="links">
-                <div *ngFor="let link of project.links" class="card" [style.background-color] = "project.buttonsColor">
-                    <a [href]="link.url">{{link.text}}</a>
-                </div>
-            </div>
-            <div *ngIf ="!project.links">
-               <br><br>
-            </div>
-           
-            <div class="screenshots">
-                <div class="lateral">
-                    <img [src]="project.leftScreenshot">
-                </div>
-                <div *ngFor="let screen of project.centeredScreenshots" class="center">
-                    <img [src]="screen">
-                </div>
-                <div *ngIf="project.webScreenshot" class="center web">
-                    <img [src]="project.webScreenshot">
-                </div>
-                <div *ngIf="project.centeredVideo" class="center">
-                    <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop></video>
-                </div>
-                
-                <div class="lateral">
-                    <img [src]="project.rightScreenshot">
-                </div>
-            </div>
-
-            <div class="features">
-                <div *ngFor="let feature of project.featureSections" class="feature">
-                    <mat-icon>{{feature.icon}}</mat-icon>
-                    <p class ="text-tip text-gradient" [style.background]="'linear-gradient(to bottom,#FFFFFF , '+project.textGradientColor+')'">
-                        {{feature.description}}
-                    </p>
-                </div>
-            </div>
-
-           
-
-            <div class="skills">
-                <div *ngFor="let skill of project.skills" class="skill card" [style.background-color] = "project.buttonsColor">
-                    <span class="material-symbols-outlined">{{skill.icon}}</span>
-                
-                    <p class ="text-tip text-gradient" [style.background]="'linear-gradient(to right,#FFFFFF , '+project.textGradientColor+')'">
-                        {{skill.title}}
-                    </p>
-                </div>
-            </div>
-
-            
-           
-
-        </div>
-
-
-    </section>
-
-    <div class="main-tip end-tips">
-        <p class="end-title">If you are reading this, Thank you!</p>
-        <br>
-        <p class="text-tip text-gradient-v">You have glimpsed some of the projects I have pursued out of personal interest and as a freelancer. Regrettably, I am unable to showcase the projects I have worked on professionally due to privacy agreements. Nevertheless, I believe my worth extends beyond the sum of the projects I have undertaken. It lies in the accumulation of knowledge and skills derived from each endeavor, amplified by the unwavering passion and fueled by an insatiable desire to learn and create. I look forward to the opportunity to connect with you again soon!</p>
-        
     </div>
+
 </body>
