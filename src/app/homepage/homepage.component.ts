@@ -75,6 +75,20 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" }, { icon: "code_blocks", title: "SpriteKit" },{ icon: "database", title: "Firebase" },{ icon: "cycle", title: "ARC Management" }]
     },
     {
+      icon: "../../assets/var/logo.png",
+      title: 'VAgumentedReality',
+      subtitle: 'A computer vision project to avoid VAR errors due to framerate\'s approximations',
+      webVideo: "./../../assets/var/video2.mov",
+      gradientColor: "#3ea368",
+      textGradientColor: "#76f2aa",
+      links: [
+        { type: "Web", url: "https://drive.google.com/file/d/1F_jNzzbe6rEa0cqc_Mstez6S6wkJpWt-/view?usp=sharing", text: "See project paper" },
+      ],
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "photo_frame", description: "Avoid framerate imprecision errors" }, { icon: "slow_motion_video", description: "Realtime procesing" }, { icon: "timeline", description: "Use ML to enhance decisions" }],
+      skills: [{ icon: "code", title: "Python" },{ icon: "code_blocks", title: "OpenCV" },{ icon: "code_blocks", title: "Tensorflow" }, { icon: "lan", title: "KCF Object Tracker" }, { icon: "transform", title: "Perspective transformation" }]
+    },
+    {
       icon: "../../assets/flue/icon.jpg",
       title: 'Flue',
       subtitle: 'A mind-blowing 3D video game that will get you hooked',

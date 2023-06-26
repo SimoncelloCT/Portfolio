@@ -40,7 +40,7 @@
 
                 <div class="screenshots">
                     <div class="lateral">
-                        <img [src]="project.leftScreenshot">
+                        <img *ngIf = "project.leftScreenshot" [src]="project.leftScreenshot">
                     </div>
                     <div *ngFor="let screen of project.centeredScreenshots" class="center">
                         <img [src]="screen">
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="lateral">
-                        <img [src]="project.rightScreenshot">
+                        <img *ngIf = "project.rightScreenshot" [src]="project.rightScreenshot">
                     </div>
                 </div>
 
