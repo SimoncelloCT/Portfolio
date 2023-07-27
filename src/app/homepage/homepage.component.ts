@@ -25,7 +25,7 @@ export class HomepageComponent {
       textGradientColor: "#88c9fa",
       buttonsColor: "#88c9fa51",
       featureSections: [{ icon: "list_alt", description: "Access to your current and future courses" }, { icon: "fact_check", description: "Organize your courses and related data" }, { icon: "folder_open", description: "Download, save and share documents with your colleagues" }, { icon: "mark_email_unread", description: "Keep updated by professors with Push Notifications" }, { icon: "edit_calendar", description: "Reserve your next exam" }],
-      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" }, { icon: "database", title: "Firebase" }, { icon: "notifications", title: "APNs" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "cycle", title: "ARC Management" }, { icon: "cloud_queue", title: "Apache Kafka" }]
+      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "database", title: "CoreData" },{ icon: "check_box", title: "XCTests" },{ icon: "database", title: "Firebase" }, { icon: "notifications", title: "APNs" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "cycle", title: "ARC Management" }, { icon: "cloud_queue", title: "Apache Kafka" }]
     },
     {
       icon: "../../assets/easybooking/logo.png",
@@ -166,7 +166,7 @@ export class HomepageComponent {
       textGradientColor: "#ff727e",
       buttonsColor: "#88c9fa51",
       featureSections: [{ icon: "home_work", description: "Manage all your contruction sites directly from the backoffice" }, { icon: "av_timer", description: "See realtime hour reportings from site workers" }, { icon: "file_open", description: "Export business-critical documents with a few clicks" }, { icon: "cloud_done", description: "Store your data into the cloud, forget to manage them" }],
-      skills: [{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" },{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" }]
+      skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" },{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" }]
     }
   ];
 }
