@@ -332,6 +332,18 @@
   }
 }
 
+@media (max-width: 2600px) {
+  .homepage{
+    --current-zoom : 0.8;
+  }
+}
+
+@media (max-width: 1500px) {
+  .homepage{
+    --current-zoom : 0.7;
+  }
+}
+
 @media (max-width: 1500px) {
     .homepage{
       --current-zoom : 0.7;
