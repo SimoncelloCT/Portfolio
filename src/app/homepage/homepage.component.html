@@ -8,12 +8,40 @@
 
                 <div class="main-tip">
                     <p class="text-tip text-gradient-h">What inspires me?</p>
-                    <p class="text-tip"> Walking around and see people using the product I've worked on</p>
+                    <p class="text-tip"> Walking around and see people using the apps I've worked on</p>
                 </div>
+                <!-- <img class="arrow" src="../../assets/arrow.png"> -->
+            </div>
+            
+        </section>
+        <section class="about">
+            <div>
+                <p class="section-title">About me</p>
+                <br>
+                <!-- <p class ="text-tip"> Hello! I'm Simone Scionti.</p> -->
+                <p class="text-tip"> Hello! I'm Simone Scionti. I'm a curious and disciplined software engineer with a
+                    full-stack interest.<br>
+                    I'm proficient in iOS native mobile development and cloud architectures.</p>
+                <br>
+                <p class="text-tip">
+                    With a keen eye for design patterns, I adhere to industry best practices promoting
+                    maintainability.<br>
+                    I love writing well-structured code, working in team and mentoring other people.
+                </p>
+                <br>
+
+                <p class="text-tip text-gradient-v"> During my work path, I decided to discover several aspects of
+                    software engineering.<br>
+                    Over the years I've covered the figures of: Front-end developer, Software Engineer (Backend) and
+                    Mobile
+                    Software Engineer (iOS). Later I decided to follow my passion for mobile development by
+                    consolidating my
+                    knowledge about Apple ecosystem and approaching multi-platform mobile modern frameworks.</p>
 
             </div>
-            <br>
         </section>
+        <div class="section-separator"></div>
+
         <section class="portfolio">
             <p class="section-title">Some of my projects</p>
             <div *ngFor="let project of projects" class="project"
@@ -40,7 +68,7 @@
 
                 <div class="screenshots">
                     <div class="lateral">
-                        <img *ngIf = "project.leftScreenshot" [src]="project.leftScreenshot">
+                        <img *ngIf="project.leftScreenshot" [src]="project.leftScreenshot">
                     </div>
                     <div *ngFor="let screen of project.centeredScreenshots" class="center">
                         <img [src]="screen">
@@ -56,7 +84,7 @@
                     </div>
 
                     <div class="lateral">
-                        <img *ngIf = "project.rightScreenshot" [src]="project.rightScreenshot">
+                        <img *ngIf="project.rightScreenshot" [src]="project.rightScreenshot">
                     </div>
                 </div>
 

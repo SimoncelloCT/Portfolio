@@ -19,13 +19,20 @@
     }
 }
 
+.arrow{
+  height: 200px;
+}
+
 .header {
-  background: linear-gradient(#000000, #03232d, #000000);
+  //background: linear-gradient(#000000, #03232d, #000000);
   color: #fff;
-  padding: calc(100px * var(--current-zoom));
+  padding: 10px;
   font-family: var(--alias-main);
+  height: 100vh;
+  display: flex;
 
   .self-description {
+    margin: auto;
     text-align: center;
     animation: fade-in 2s;
 
@@ -47,7 +54,7 @@
       font-size: calc(8rem * var(--current-zoom));
       font-family: var(--alias-alt);
       font-weight: normal;
-      background: linear-gradient(to right, #bbdcf5, #bbdcf5, #b5e5f5, #bbdcf5, #bbdcf5);
+      background: linear-gradient(to right, white, white, white,#20b1dd,#20b1dd, white);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -56,7 +63,7 @@
       font-size: calc(4rem * var(--current-zoom));;
       font-family: var(--alias-main);
       font-weight: normal;
-      background: linear-gradient(to right, white, #88c9fa, white, white, white);
+      background: linear-gradient(to right, white, white, white, white);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -230,10 +237,9 @@
   font-size: calc(4rem * var(--current-zoom));
   font-family: var(--alias-main);
   font-weight: normal;
-  background: linear-gradient(to right, white, #88c9fa, white, white, white);
+  background: linear-gradient(to right, white ,#20b1dd,  white, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
@@ -290,7 +296,6 @@
   font-size: calc(2rem * var(--current-zoom));
   font-family: var(--alias-main);
   font-weight: normal;
-  max-width: 1000px;
 }
 
 
@@ -298,6 +303,31 @@
 .portfolio {
   animation: slide-up 1s;
 }
+
+.about{
+  padding: calc(100px * var(--current-zoom));
+  height: 70vh;
+  display: flex;
+  div{
+    margin: auto;
+    p{
+      text-align: center;
+      margin: 30px;
+      color: white;
+      max-width: 70vw;
+      margin: auto;
+    }
+  }
+}
+
+.portfolio, .main-tip, .job-title, .about  {
+  animation: slide-up 1s;
+}
+
+.section-separator{
+  height: 15vh;
+}
+
 
 
 
@@ -364,6 +394,8 @@
   .homepage{
     --current-zoom : 0.4;
  }
+
+
  .screenshots{
         justify-content: center !important;
         .center{
