@@ -28,7 +28,7 @@
   color: #fff;
   padding: 10px;
   font-family: var(--alias-main);
-  height: 100vh;
+  height: calc(100vh - 10px);
   display: flex;
 
   .self-description {
@@ -305,16 +305,14 @@
 }
 
 .about{
-  padding: calc(100px * var(--current-zoom));
-  height: 70vh;
-  display: flex;
+  padding-top: calc(100px * var(--current-zoom));
+  height: 60vh;
   div{
-    margin: auto;
     p{
       text-align: center;
       margin: 30px;
       color: white;
-      max-width: 70vw;
+      max-width: 80vw;
       margin: auto;
     }
   }
