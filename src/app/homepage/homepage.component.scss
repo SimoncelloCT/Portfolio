@@ -1,7 +1,8 @@
 :host {
   --alias-main: 'SequelSansHeadline', sans-serif;
   --alias-alt: 'SharpGroteskBook20', sans-serif;
-  --current-zoom : 1.0;
+  --current-zoom: 1.0;
+  --timeline-line-vw: 20vw;
 }
 
 .error{
@@ -306,14 +307,15 @@
 
 .about{
   padding-top: calc(100px * var(--current-zoom));
-  height: 60vh;
-  div{
+  height: 100vh;
+  #description{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1500px;
     p{
       text-align: center;
-      margin: 30px;
       color: white;
-      max-width: 80vw;
-      margin: auto;
     }
   }
 }
@@ -321,6 +323,82 @@
 .portfolio, .main-tip, .job-title, .about  {
   animation: slide-up 1s;
 }
+
+.history{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  .timeline{
+    display: flex;
+    .timeline-item{
+      max-width: calc(var(--timeline-line-vw));
+      width: calc(var(--timeline-line-vw));;
+      img{
+        width: calc(300px * var(--current-zoom));
+        max-width: calc(300px * var(--current-zoom));
+        height: auto;
+        border-radius: calc(10px * var(--current-zoom));
+      }
+      .segment{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        width: var(--timeline-line-vw);
+        .right-gradient-line {
+          height: 1px;
+          background: linear-gradient(to right, #88c9fa, #88c9fa, #88c9fa);
+          margin-top: auto;
+          margin-bottom: auto;
+          width: calc((var(--timeline-line-vw) - calc(140px * var(--current-zoom))));
+        }
+        .left-gradient-line {
+          height: 1px;
+          background: linear-gradient(to right, #88c9fa, #88c9fa, #88c9fa);
+          margin-top: auto;
+          margin-bottom: auto;
+          width: calc((140px * var(--current-zoom)));
+        }
+        .start-spacing {
+          height: 1px;
+          background: transparent;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: calc((140px * var(--current-zoom)));
+        }
+        .circle{
+          min-width: 20px;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          background-color: #88c9fa;
+        }
+      }
+      .company-details{
+        color: white;
+        padding: 0;
+        width: calc(300px * var(--current-zoom));
+        max-width: calc(300px * var(--current-zoom));;
+        text-align: center;
+        .company-name{
+          margin:auto
+        }
+        .dates{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: auto;
+          p{
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
 
 .section-separator{
   height: 15vh;
