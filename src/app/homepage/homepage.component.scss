@@ -3,6 +3,7 @@
   --alias-alt: 'SharpGroteskBook20', sans-serif;
   --current-zoom: 1.0;
   --timeline-line-vw: 20vw;
+  --timeline-line-height-mobile: 230px;
 }
 
 .error{
@@ -29,7 +30,7 @@
   color: #fff;
   padding: 10px;
   font-family: var(--alias-main);
-  height: calc(100vh - 10px);
+  min-height: calc(100vh - 10px);
   display: flex;
 
   .self-description {
@@ -307,12 +308,12 @@
 
 .about{
   padding-top: calc(100px * var(--current-zoom));
-  height: 100vh;
+  min-height: 100vh;
   #description{
+    padding-left: calc(100px * var(--current-zoom));
+    padding-right: calc(100px * var(--current-zoom));
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 1500px;
+    max-width: calc(1700px * var(--current-zoom));
     p{
       text-align: center;
       color: white;
@@ -324,10 +325,18 @@
   animation: slide-up 1s;
 }
 
+
+.before{
+  display: none !important;
+}
+
+
+
 .history{
   display: flex;
   justify-content: center;
   .timeline{
+    padding-top: calc(40px * var(--current-zoom));
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -339,7 +348,7 @@
       .company-name{
         margin:auto;
         padding-top: calc(20px * var(--current-zoom));
-        font-size: calc(1.5rem * var(--current-zoom));
+        font-size: calc(1.2rem * var(--current-zoom));
         font-family: var(--alias-main);
         font-weight: normal;
       }
@@ -354,7 +363,7 @@
         justify-content: center;
         width: auto;
         p{
-          font-size: calc(1.4rem * var(--current-zoom));
+          font-size: calc(1.2rem * var(--current-zoom));
           font-family: var(--alias-main);
           font-weight: normal;
           margin: 2px;
@@ -371,7 +380,7 @@
         border-radius: calc(10px * var(--current-zoom));
       }
       .segment{
-        padding-top: calc(20px * var(--current-zoom));
+        padding-top: calc(60px * var(--current-zoom));
         display: flex;
         flex-direction: row;
         width: var(--timeline-line-vw);
@@ -480,10 +489,9 @@
 @media (max-width: 660px) {
   .homepage{
     --current-zoom : 0.4;
- }
-
-
- .screenshots{
+    --timeline-line-vw : 70vw;
+  }
+  .screenshots{
         justify-content: center !important;
         .center{
             margin-left: 30px;
@@ -493,4 +501,99 @@
             display: none;
         }
     }
-}
+
+    .before{
+      display: flex !important;
+    }
+
+    .history{
+      display: flex;
+      justify-content: center;
+      .timeline{
+        display: flex;
+        flex-direction: column;
+        .comp-details{
+          min-width: 250px;
+          text-align: center;
+          color: white;
+          padding: 0;
+          text-align: center;
+          .company-name{
+            margin:auto;
+            padding-top: calc(20px * var(--current-zoom));
+            font-size: calc(2.0rem * var(--current-zoom));
+            font-family: var(--alias-main);
+            font-weight: normal;
+          }
+          .role-name{
+            font-size: calc(2.8rem * var(--current-zoom));
+            font-family: var(--alias-main);
+            font-weight: normal;
+          }
+          .dates{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: auto;
+            p{
+              font-size: calc(2.0rem * var(--current-zoom));
+              font-family: var(--alias-main);
+              font-weight: normal;
+              margin: 2px;
+            }
+          }
+        }
+        .timeline-item{
+          height: var(--timeline-line-height-mobile);
+          max-width: var(--timeline-line-vw);
+          width: var(--timeline-line-vw);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          img{
+            height: auto;
+            height: calc(40px);
+            max-height: calc(40px);
+            border-radius: calc(10px * var(--current-zoom));
+          }
+          .segment{
+            width: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: var(--timeline-line-height-mobile);
+            .right-gradient-line {
+              width: 1px;
+              background: linear-gradient(to bottom, #88c9fa, #88c9fa, #88c9fa);
+              height: calc(var(--timeline-line-height-mobile)/2);
+              margin: 0;
+            }
+            .left-gradient-line {
+              width: 1px;
+              background: linear-gradient(to bottom, #88c9fa, #88c9fa, #88c9fa);
+              height: calc(var(--timeline-line-height-mobile)/2);
+              margin: 0;
+            }
+            .start-spacing {
+              width: 1px;
+              background: transparent;
+              margin-top: auto;
+              margin-bottom: auto;
+              height: calc(var(--timeline-line-height-mobile)/2)
+            }
+            .circle{
+              width: 1px;
+              width: calc(20px * var(--current-zoom));
+              height: calc(20px * var(--current-zoom));
+              border-radius: calc(10px * var(--current-zoom));
+              background-color: #88c9fa;
+            }
+          }    
+        }
+      }
+    }
+    .after{
+      display: none !important;
+    }
+  }

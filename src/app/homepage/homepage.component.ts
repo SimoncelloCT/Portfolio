@@ -63,6 +63,39 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" }, { icon: "database", title: "Firebase" }, { icon: "notifications", title: "FCM" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "schedule_send", title: "Google Maps SDK" },{ icon: "map", title: "Leaflet" },{ icon: "person_pin_circle", title: "Real-time Geolocation" }, { icon: "share_location", title: "Background Geolocation" }, { icon: "share", title: "Deep links" }, { icon: "shop_two", title: "In-App Purchases" }]
     },
     {
+      icon: "../../assets/csm/icon.png",
+      title: 'CSM',
+      subtitle: 'A cloud-native platform for managing construction sites',
+      links: [
+        { type: "Web", url: "https://drive.google.com/file/d/12x6RzmksE7RArqAVwmjBDE_nLsuqdU9b/view?usp=sharing", text: "See project paper" },
+      ],
+      leftScreenshot: "../../assets/csm/screen1.png",
+      rightScreenshot: "./../assets/csm/screen3.png",
+      webScreenshot: "../../assets/csm/screen2.png",
+      gradientColor: "#7c131c",//"#73B92F",
+      textGradientColor: "#ff727e",
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "home_work", description: "Manage all your contruction sites directly from the backoffice" }, { icon: "av_timer", description: "See realtime hour reportings from site workers" }, { icon: "file_open", description: "Export business-critical documents with a few clicks" }, { icon: "cloud_done", description: "Store your data into the cloud, forget to manage them" }],
+      skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" },{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" }]
+    },
+    {
+      icon: "../../assets/steganography/icon.png",
+      title: 'Steganography',
+      subtitle: 'Hide information into your photos to send secure private visual messages',
+      leftScreenshot: "../../assets/steganography/screen1.png",
+      rightScreenshot: "./../assets/steganography/screen5.png",
+      centeredScreenshots: ["../../assets/steganography/screen3.png","../../assets/steganography/screen4.png"],
+      links: [
+    
+        { type: "Web", url: "https://drive.google.com/file/d/1wQO9lCJ7nPgzT4oQCXRNQgv_W_xqSvf9/view?usp=sharing", text: "See project paper" },
+      ],
+      gradientColor: "#b7a645",//"#73B92F",
+      textGradientColor: "#e5d475",
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "hide_image", description: "Hide your private image within another image for secure sharing" }, { icon: "lan", description: "Utilize the Least Significant Bit (LSB) algorithm to embed images covertly" }, { icon: "enhanced_encryption", description: "Protect your hidden image with a secure symmetric encryption key" }],
+      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "code_blocks", title: "AES Criptography" }, { icon: "code", title: "Bitwise management" }]
+    },
+    {
       icon: "../../assets/logicgame/logo.png",
       title: 'LogicGame',
       subtitle: 'A complete platform to make live quiz about logic circuits and Boolean algebra',
@@ -125,23 +158,6 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "C#" }, { icon: "code_blocks", title: "Unity" }, { icon: "cycle", title: "Multithreading" }]
     },
     {
-      icon: "../../assets/steganography/icon.png",
-      title: 'Steganography',
-      subtitle: 'Hide information into your photos to send secure private visual messages',
-      leftScreenshot: "../../assets/steganography/screen1.png",
-      rightScreenshot: "./../assets/steganography/screen5.png",
-      centeredScreenshots: ["../../assets/steganography/screen3.png","../../assets/steganography/screen4.png"],
-      links: [
-    
-        { type: "Web", url: "https://drive.google.com/file/d/1wQO9lCJ7nPgzT4oQCXRNQgv_W_xqSvf9/view?usp=sharing", text: "See project paper" },
-      ],
-      gradientColor: "#b7a645",//"#73B92F",
-      textGradientColor: "#e5d475",
-      buttonsColor: "#88c9fa51",
-      featureSections: [{ icon: "hide_image", description: "Hide your private image within another image for secure sharing" }, { icon: "lan", description: "Utilize the Least Significant Bit (LSB) algorithm to embed images covertly" }, { icon: "enhanced_encryption", description: "Protect your hidden image with a secure symmetric encryption key" }],
-      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "code_blocks", title: "AES Criptography" }, { icon: "code", title: "Bitwise management" }]
-    },
-    {
       icon: "../../assets/passions/icon.png",
       title: 'Passions',
       subtitle: 'A social network designed to connect individuals who share your passions',
@@ -153,42 +169,26 @@ export class HomepageComponent {
       buttonsColor: "#88c9fa51",
       featureSections: [{ icon: "view_carousel", description: "Beautiful animations for a wonderful user experience" }, { icon: "grid_view", description: "Show your passions to other users by defining collections" }, { icon: "share", description: "Help others to live their passions providing useful links" }],
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "code_blocks", title: "AVFoundation" }]
-    },
-    {
-      icon: "../../assets/csm/icon.png",
-      title: 'CSM',
-      subtitle: 'A cloud-native platform for managing construction sites',
-      links: [
-        { type: "Web", url: "https://drive.google.com/file/d/12x6RzmksE7RArqAVwmjBDE_nLsuqdU9b/view?usp=sharing", text: "See project paper" },
-      ],
-      leftScreenshot: "../../assets/csm/screen1.png",
-      rightScreenshot: "./../assets/csm/screen3.png",
-      webScreenshot: "../../assets/csm/screen2.png",
-      gradientColor: "#7c131c",//"#73B92F",
-      textGradientColor: "#ff727e",
-      buttonsColor: "#88c9fa51",
-      featureSections: [{ icon: "home_work", description: "Manage all your contruction sites directly from the backoffice" }, { icon: "av_timer", description: "See realtime hour reportings from site workers" }, { icon: "file_open", description: "Export business-critical documents with a few clicks" }, { icon: "cloud_done", description: "Store your data into the cloud, forget to manage them" }],
-      skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" },{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" }]
     }
   ];
 
 
   experiences: Experience[] = [
     {
-      startDate: 'Feb 2017',
-      endDate: 'Jun 2017',
-      logoPath: '../../assets/companies/flazio.png',
-      companyName: 'Flazio',
+      startDate: 'Nov 2022',
+      endDate: 'Present',
+      logoPath: '../../assets/companies/codedix.png',
+      companyName: 'Codedix',
       description: '',
-      role: "Front-End developer"
+      role: "iOS Engineer"
     },
     {
-      startDate: 'Mar 2019',
-      endDate: 'Feb 2020',
-      logoPath: '../../assets/companies/freelance.png',
-      companyName: 'Freelance',
+      startDate: 'Jul 2020',
+      endDate: 'Nov 2022',
+      logoPath: '../../assets/companies/bax.png',
+      companyName: 'BaxEnergy',
       description: '',
-      role: "Full-Stack developer"
+      role: "Software Engineer"
     },
     {
       startDate: 'Feb 2020',
@@ -199,21 +199,20 @@ export class HomepageComponent {
       role: "iOS Engineer"
     },
     {
-      startDate: '20 Nov 2022',
-      endDate: '20 Nov 2023',
-      logoPath: '../../assets/companies/bax.png',
-      companyName: 'BaxEnergy',
+      startDate: 'Mar 2019',
+      endDate: 'Feb 2020',
+      logoPath: '../../assets/companies/freelance.png',
+      companyName: 'Freelance',
       description: '',
-      role: "Software Engineer"
+      role: "Full-Stack developer"
     },
     {
-      startDate: 'Nov 2022',
-      endDate: 'Present',
-      logoPath: '../../assets/companies/codedix.png',
-      companyName: 'Codedix',
+      startDate: 'Feb 2017',
+      endDate: 'Jun 2017',
+      logoPath: '../../assets/companies/flazio.png',
+      companyName: 'Flazio',
       description: '',
-      role: "iOS Engineer"
-    }
-
+      role: "Front-End developer"
+    },
   ]
 }
