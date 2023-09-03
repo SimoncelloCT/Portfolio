@@ -310,8 +310,8 @@
   padding-top: calc(100px * var(--current-zoom));
   min-height: 100vh;
   #description{
-    padding-left: calc(100px * var(--current-zoom));
-    padding-right: calc(100px * var(--current-zoom));
+    padding-left: calc(60px * var(--current-zoom));
+    padding-right: calc(60px * var(--current-zoom));
     margin: auto;
     max-width: calc(1700px * var(--current-zoom));
     p{
