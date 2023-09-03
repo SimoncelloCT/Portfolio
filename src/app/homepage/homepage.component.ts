@@ -212,7 +212,7 @@ export class HomepageComponent {
       logoPath: '../../assets/companies/codedix.png',
       companyName: 'Codedix',
       description: '',
-      role: "iOS Engineer • Co-founder"
+      role: "iOS Engineer"
     }
 
   ]
