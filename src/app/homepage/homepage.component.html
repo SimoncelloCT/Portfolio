@@ -15,32 +15,58 @@
             
         </section>
         <section class="about">
-            <div>
+            <div id="description">
                 <p class="section-title">About me</p>
-                <br>
-                <!-- <p class ="text-tip"> Hello! I'm Simone Scionti.</p> -->
-                <p class="text-tip"> Hello! I'm Simone Scionti. I'm a curious and disciplined software engineer with a
-                    full-stack interest.<br>
-                    I'm proficient in iOS native mobile development and cloud architectures.</p>
-                <br>
-                <p class="text-tip">
-                    With a keen eye for design patterns, I adhere to industry best practices promoting
-                    maintainability.<br>
-                    I love writing well-structured code, working in team and mentoring other people.
+                <p class="text-tip"> Hello! I'm Simone Scionti. I'm a curious and disciplined software engineer with a deep interest in Apple technologies.
+                    <br>I'm proficient in iOS native mobile development and have knowledge about cloud serverless architectures on AWS.
+                    <br>With a keen eye for design patterns, I adhere to industry best practices maximizing reuse and promoting maintainability. 
+                    <br>I’m always seeking ways to deliver a seamless experience to the end-users.
+                    <br>I strive to write well-structured code, work in a team and mentor other people. </p>
+                <p class="text-tip text-gradient-v">
+                    During my career, I had experience in several aspects of software engineering. Over the years I've covered the figures of Front-end developer, Software Engineer and iOS Engineer. Later I decided to follow my passion for mobile development by consolidating my knowledge about the Apple ecosystem and approaching multi-platform mobile technologies such as Flutter.
+                    <br>Recently I started my PhD on Artificial Intelligence applied to cultural heritage, a discipline I’m curious about.
                 </p>
                 <br>
-
-                <p class="text-tip text-gradient-v"> During my work path, I decided to discover several aspects of
-                    software engineering.<br>
-                    Over the years I've covered the figures of: Front-end developer, Software Engineer (Backend) and
-                    Mobile
-                    Software Engineer (iOS). Later I decided to follow my passion for mobile development by
-                    consolidating my
-                    knowledge about Apple ecosystem and approaching multi-platform mobile modern frameworks.</p>
-
             </div>
+            <br><br><br><br>
+            <div class="history">
+                <div class="timeline">
+                    <div class="timeline-item" *ngFor="let experience of experiences;let i = index">
+                        <div class="comp-details">
+                            <div class="company-logo">
+                                <img [src]="experience.logoPath" alt="Logo {{ experience.companyName }}">
+                              </div>
+                            
+                                <p class= "company-name">{{ experience.companyName }}</p>
+                                <p class= "role-name text-gradient-h">{{ experience.role }}</p>
+                                <div class= "dates text-gradient-h">
+                                    <p>{{ experience.startDate }}</p>
+                                    <p class="divider">-</p>
+                                    <p>{{ experience.endDate }}</p>
+                                </div>
+                        </div>
+                     
+                      <div class="segment">
+                        <ng-container *ngIf="i != 0">
+                            <div class= "left-gradient-line"></div>
+                        </ng-container>
+                        <ng-container *ngIf="i == 0">
+                            <div class= "start-spacing"></div>
+                        </ng-container>
+                        <ng-container>
+                            <div class="circle"></div>
+                        </ng-container>
+                        
+                        <ng-container *ngIf="i < experiences.length-1">
+                            <div class= "right-gradient-line"></div>
+                        </ng-container>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
         </section>
-
+       
         <section class="portfolio">
             <p class="section-title">Some of my projects</p>
             <div *ngFor="let project of projects" class="project"
@@ -114,10 +140,7 @@
             <p class="end-title">If you are reading this, Thank you!</p>
             <br>
             <p class="text-tip text-gradient-v">You have glimpsed some of the projects I have pursued out of personal
-                interest and as a freelancer. Regrettably, I am unable to showcase the projects I have worked on
-                professionally due to privacy agreements. Nevertheless, I believe my worth extends beyond the sum of the
-                projects I have undertaken. It lies in the accumulation of knowledge and skills derived from each
-                endeavor, amplified by the unwavering passion and fueled by an insatiable desire to learn and create. I
+                interest and as a freelancer. I
                 look forward to the opportunity to connect with you again soon!</p>
         </div>
     </div>

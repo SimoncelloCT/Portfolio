@@ -327,17 +327,46 @@
 .history{
   display: flex;
   justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   .timeline{
     display: flex;
+    .comp-details{
+      text-align: center;
+      color: white;
+      padding: 0;
+      text-align: center;
+      .company-name{
+        margin:auto;
+        padding-top: 20px;
+        font-size: calc(1.5rem * var(--current-zoom));
+        font-family: var(--alias-main);
+        font-weight: normal;
+      }
+      .role-name{
+        font-size: calc(1.8rem * var(--current-zoom));
+        font-family: var(--alias-main);
+        font-weight: normal;
+      }
+      .dates{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        p{
+          font-size: calc(1.4rem * var(--current-zoom));
+          font-family: var(--alias-main);
+          font-weight: normal;
+          margin: 2px;
+        }
+      }
+    }
     .timeline-item{
-      max-width: calc(var(--timeline-line-vw));
-      width: calc(var(--timeline-line-vw));;
+      max-width: var(--timeline-line-vw);
+      width: var(--timeline-line-vw);
       img{
-        width: calc(300px * var(--current-zoom));
-        max-width: calc(300px * var(--current-zoom));
-        height: auto;
+        width: auto;
+        height: 70px;
         border-radius: calc(10px * var(--current-zoom));
       }
       .segment{
@@ -350,21 +379,21 @@
           background: linear-gradient(to right, #88c9fa, #88c9fa, #88c9fa);
           margin-top: auto;
           margin-bottom: auto;
-          width: calc((var(--timeline-line-vw) - calc(140px * var(--current-zoom))));
+          width: calc(var(--timeline-line-vw)/2);
         }
         .left-gradient-line {
           height: 1px;
           background: linear-gradient(to right, #88c9fa, #88c9fa, #88c9fa);
           margin-top: auto;
           margin-bottom: auto;
-          width: calc((140px * var(--current-zoom)));
+          width: calc(var(--timeline-line-vw)/2)
         }
         .start-spacing {
           height: 1px;
           background: transparent;
           margin-top: auto;
           margin-bottom: auto;
-          width: calc((140px * var(--current-zoom)));
+          width: calc(var(--timeline-line-vw)/2)
         }
         .circle{
           min-width: 20px;
@@ -373,26 +402,7 @@
           border-radius: 10px;
           background-color: #88c9fa;
         }
-      }
-      .company-details{
-        color: white;
-        padding: 0;
-        width: calc(300px * var(--current-zoom));
-        max-width: calc(300px * var(--current-zoom));;
-        text-align: center;
-        .company-name{
-          margin:auto
-        }
-        .dates{
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          width: auto;
-          p{
-            margin: 2px;
-          }
-        }
-      }
+      }    
     }
   }
 

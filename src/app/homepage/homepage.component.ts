@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { Project } from './Models/Project';
+import { Experience } from './Models/Experience';
 
 @Component({
   selector: 'app-homepage',
@@ -52,6 +53,7 @@ export class HomepageComponent {
       rightScreenshot: "./../assets/guardian/screen-4.PNG",
       centeredScreenshots: ["../../assets/guardian/screen-2.PNG", "../../assets/guardian/screen-3.PNG"],
       links: [
+        { type: "AppStore", url: "https://apps.apple.com/app/guardian/id1665898466", text: "See on App Store" },
         { type: "AppStore", url: "https://play.google.com/store/apps/details?id=com.letss.guardian", text: "See on Play Store" },
       ],
       gradientColor: "#311972",
@@ -169,4 +171,49 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" },{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" }]
     }
   ];
+
+
+  experiences: Experience[] = [
+    {
+      startDate: 'Feb 2017',
+      endDate: 'Jun 2017',
+      logoPath: '../../assets/companies/flazio.png',
+      companyName: 'Flazio',
+      description: '',
+      role: "Front-End developer"
+    },
+    {
+      startDate: 'Mar 2019',
+      endDate: 'Feb 2020',
+      logoPath: '../../assets/companies/freelance.png',
+      companyName: 'Freelance',
+      description: '',
+      role: "Full-Stack developer"
+    },
+    {
+      startDate: 'Feb 2020',
+      endDate: 'Jul 2020',
+      logoPath: '../../assets/companies/unict.png',
+      companyName: 'Unict Information Systems',
+      description: '',
+      role: "iOS Engineer"
+    },
+    {
+      startDate: '20 Nov 2022',
+      endDate: '20 Nov 2023',
+      logoPath: '../../assets/companies/bax.png',
+      companyName: 'BaxEnergy',
+      description: '',
+      role: "Software Engineer"
+    },
+    {
+      startDate: 'Nov 2022',
+      endDate: 'Present',
+      logoPath: '../../assets/companies/codedix.png',
+      companyName: 'Codedix',
+      description: '',
+      role: "iOS Engineer • Co-founder"
+    }
+
+  ]
 }
