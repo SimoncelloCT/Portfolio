@@ -29,23 +29,6 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "database", title: "CoreData" },{ icon: "check_box", title: "XCTests" },{ icon: "database", title: "Firebase" }, { icon: "notifications", title: "APNs" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "cycle", title: "ARC Management" }, { icon: "cloud_queue", title: "Apache Kafka" }]
     },
     {
-      icon: "../../assets/easybooking/logo.png",
-      title: 'EasyBooking',
-      subtitle: 'A complete platform to manage bookings for sports, beauty and hairdressers',
-      leftScreenshot: "../../assets/easybooking/screen1.png",
-      rightScreenshot: "./../assets/easybooking/screen3.png",
-      webScreenshot: "./../assets/easybooking/web.png",
-      links: [
-        { type: "Web", url: "https://easybookingapp.it/welcome", text: "See on the Web" },
-        { type: "Web", url: "https://demo-sport.easybookingapp.it/login", text: "Try the demo" },
-      ],
-      gradientColor: "#2e0b49",
-      textGradientColor: "#c192e8",
-      buttonsColor: "#88c9fa51",
-      featureSections: [{ icon: "edit_calendar", description: "Effortlessly manage customer appointments with ease" }, { icon: "mark_email_unread", description: "Drive sales success with customized campaigns and filters" }, { icon: "timeline", description: "Gain business clarity through trend analysis" },{ icon: "notifications", description: "Keep your audience informed with timely push notifications" }],
-      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "database", title: "Firebase" },{ icon: "database", title: "Firestore" }, { icon: "notifications", title: "APNs" },{ icon: "code_blocks", title: "Angular" }, { icon: "code", title: "Typescript" }, { icon: "dns", title: "NodeJS" }]
-    },
-    {
       icon: "../../assets/guardian/logo.jpg",
       title: 'Guardian',
       subtitle: 'A multi-platform mobile app that helps you to walk safely in your city',
@@ -96,6 +79,37 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "code_blocks", title: "AES Criptography" }, { icon: "code", title: "Bitwise management" }]
     },
     {
+      icon: "../../assets/easybooking/logo.png",
+      title: 'EasyBooking',
+      subtitle: 'A complete platform to manage bookings for sports, beauty and hairdressers',
+      leftScreenshot: "../../assets/easybooking/screen1.png",
+      rightScreenshot: "./../assets/easybooking/screen3.png",
+      webScreenshot: "./../assets/easybooking/web.png",
+      links: [
+        { type: "Web", url: "https://easybookingapp.it/welcome", text: "See on the Web" },
+        { type: "Web", url: "https://demo-sport.easybookingapp.it/login", text: "Try the demo" },
+      ],
+      gradientColor: "#2e0b49",
+      textGradientColor: "#c192e8",
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "edit_calendar", description: "Effortlessly manage customer appointments with ease" }, { icon: "mark_email_unread", description: "Drive sales success with customized campaigns and filters" }, { icon: "timeline", description: "Gain business clarity through trend analysis" },{ icon: "notifications", description: "Keep your audience informed with timely push notifications" }],
+      skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "database", title: "Firebase" },{ icon: "database", title: "Firestore" }, { icon: "notifications", title: "APNs" },{ icon: "code_blocks", title: "Angular" }, { icon: "code", title: "Typescript" }, { icon: "dns", title: "NodeJS" }]
+    },
+    {
+      icon: "../../assets/var/logo.png",
+      title: 'VAugmentedReality',
+      subtitle: 'A computer vision project to avoid VAR errors due to framerate\'s approximations',
+      webVideo: "./../../assets/var/video2.mov",
+      gradientColor: "#3ea368",
+      textGradientColor: "#76f2aa",
+      links: [
+        { type: "Web", url: "https://drive.google.com/file/d/1F_jNzzbe6rEa0cqc_Mstez6S6wkJpWt-/view?usp=sharing", text: "See project paper" },
+      ],
+      buttonsColor: "#88c9fa51",
+      featureSections: [{ icon: "photo_frame", description: "Avoid framerate imprecision errors" }, { icon: "slow_motion_video", description: "Realtime procesing" }, { icon: "timeline", description: "Use ML to enhance decisions" }],
+      skills: [{ icon: "code", title: "Python" },{ icon: "code_blocks", title: "OpenCV" },{ icon: "code_blocks", title: "Tensorflow" },{ icon: "code_blocks", title: "YoloV4" }, { icon: "lan", title: "KCF Object Tracker" }, { icon: "transform", title: "Perspective transformation" }]
+    },
+    {
       icon: "../../assets/logicgame/logo.png",
       title: 'LogicGame',
       subtitle: 'A complete platform to make live quiz about logic circuits and Boolean algebra',
@@ -124,21 +138,6 @@ export class HomepageComponent {
       buttonsColor: "#88c9fa51",
       featureSections: [{ icon: "sports_soccer", description: "Challenge yourself in single player mode" }, { icon: "groups", description: "Play against people all over the world" }, { icon: "group", description: "Challenge your facebook friends" }, { icon: "workspace_premium", description: "See your worldwide leaderboard position" }],
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" }, { icon: "code_blocks", title: "SpriteKit" },{ icon: "database", title: "Firebase" },{ icon: "cycle", title: "ARC Management" }]
-    },
-
-    {
-      icon: "../../assets/var/logo.png",
-      title: 'VAugmentedReality',
-      subtitle: 'A computer vision project to avoid VAR errors due to framerate\'s approximations',
-      webVideo: "./../../assets/var/video2.mov",
-      gradientColor: "#3ea368",
-      textGradientColor: "#76f2aa",
-      links: [
-        { type: "Web", url: "https://drive.google.com/file/d/1F_jNzzbe6rEa0cqc_Mstez6S6wkJpWt-/view?usp=sharing", text: "See project paper" },
-      ],
-      buttonsColor: "#88c9fa51",
-      featureSections: [{ icon: "photo_frame", description: "Avoid framerate imprecision errors" }, { icon: "slow_motion_video", description: "Realtime procesing" }, { icon: "timeline", description: "Use ML to enhance decisions" }],
-      skills: [{ icon: "code", title: "Python" },{ icon: "code_blocks", title: "OpenCV" },{ icon: "code_blocks", title: "Tensorflow" },{ icon: "code_blocks", title: "YoloV4" }, { icon: "lan", title: "KCF Object Tracker" }, { icon: "transform", title: "Perspective transformation" }]
     },
     {
       icon: "../../assets/flue/icon.jpg",
@@ -175,12 +174,20 @@ export class HomepageComponent {
 
   experiences: Experience[] = [
     {
+      startDate: 'Aug 2023',
+      endDate: 'Present',
+      logoPath: '../../assets/companies/ovolab.png',
+      companyName: 'Ovolab',
+      description: '',
+      role: "iOS Engineer"
+    },
+    {
       startDate: 'Nov 2022',
       endDate: 'Present',
       logoPath: '../../assets/companies/codedix.png',
       companyName: 'Codedix',
       description: '',
-      role: "iOS Engineer"
+      role: "iOS Engineer • Co-founder"
     },
     {
       startDate: 'Jul 2020',
@@ -198,7 +205,7 @@ export class HomepageComponent {
       description: '',
       role: "iOS Engineer"
     },
-    {
+    /*{
       startDate: 'Mar 2019',
       endDate: 'Feb 2020',
       logoPath: '../../assets/companies/freelance.png',
@@ -212,7 +219,7 @@ export class HomepageComponent {
       logoPath: '../../assets/companies/flazio.png',
       companyName: 'Flazio',
       description: '',
-      role: "Front-End developer"
-    },
+      role: "Front-End developer • Internship"
+    },*/
   ]
 }
