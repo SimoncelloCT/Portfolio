@@ -11,6 +11,7 @@ export class HomepageComponent {
 
   projects: Project[] = [
     {
+      year: "2020",
       icon: "../../assets/studium/studium.png",
       title: 'Studium',
       subtitle: 'The official iOS App of University of Catania, born to enhance communication between students and professors',
@@ -29,6 +30,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "database", title: "CoreData" },{ icon: "check_box", title: "XCTests" },{ icon: "database", title: "Firebase" }, { icon: "notifications", title: "APNs" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "cycle", title: "ARC Management" }, { icon: "cloud_queue", title: "Apache Kafka" }]
     },
     {
+      year: "2023",
       icon: "../../assets/guardian/logo.jpg",
       title: 'Guardian',
       subtitle: 'A multi-platform mobile app that helps you to walk safely in your city',
@@ -46,6 +48,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" }, { icon: "database", title: "Firebase" }, { icon: "notifications", title: "FCM" },{ icon: "schedule_send", title: "REST APIs" },{ icon: "schedule_send", title: "Google Maps SDK" },{ icon: "map", title: "Leaflet" },{ icon: "person_pin_circle", title: "Real-time Geolocation" }, { icon: "share_location", title: "Background Geolocation" }, { icon: "share", title: "Deep links" }, { icon: "shop_two", title: "In-App Purchases" }]
     },
     {
+      year: "2023",
       icon: "../../assets/csm/icon.png",
       title: 'CSM',
       subtitle: 'A cloud-native platform for managing construction sites',
@@ -62,6 +65,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Dart" }, { icon: "code_blocks", title: "Flutter" },{ icon: "code", title: "Typescript" },{ icon: "code_blocks", title: "Angular" },{ icon: "dns", title: "NodeJS" },{ icon: "cloud_sync", title: "AWS" },{ icon: "cloud_circle", title: "Serverless" }, { icon: "function", title: "Lambda Functions" },{ icon: "badge", title: "Cognito" }, { icon: "storage", title: "S3" }, { icon: "database", title: "DynamoDB" },{ icon: "api", title: "API Gateway" }, { icon: "bolt", title: "GraphQL" }, { icon: "magic_exchange", title: "AppSync" }, { icon: "backup_table", title: "CloudFormation" }]
     },
     {
+      year: "2021",
       icon: "../../assets/steganography/icon.png",
       title: 'Steganography',
       subtitle: 'Hide information into your photos to send secure private visual messages',
@@ -79,6 +83,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "code_blocks", title: "AES Criptography" }, { icon: "code", title: "Bitwise management" }]
     },
     {
+      year: "2022",
       icon: "../../assets/easybooking/logo.png",
       title: 'EasyBooking',
       subtitle: 'A complete platform to manage bookings for sports, beauty and hairdressers',
@@ -96,6 +101,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "SwiftUI" },{ icon: "code_blocks", title: "RxSwift" }, { icon: "database", title: "Firebase" },{ icon: "database", title: "Firestore" }, { icon: "notifications", title: "APNs" },{ icon: "code_blocks", title: "Angular" }, { icon: "code", title: "Typescript" }, { icon: "dns", title: "NodeJS" }]
     },
     {
+      year: "2021",
       icon: "../../assets/var/logo.png",
       title: 'VAugmentedReality',
       subtitle: 'A computer vision project to avoid VAR errors due to framerate\'s approximations',
@@ -110,6 +116,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Python" },{ icon: "code_blocks", title: "OpenCV" },{ icon: "code_blocks", title: "Tensorflow" },{ icon: "code_blocks", title: "YoloV4" }, { icon: "lan", title: "KCF Object Tracker" }, { icon: "transform", title: "Perspective transformation" }]
     },
     {
+      year: "2018",
       icon: "../../assets/logicgame/logo.png",
       title: 'LogicGame',
       subtitle: 'A complete platform to make live quiz about logic circuits and Boolean algebra',
@@ -123,6 +130,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "HTML" }, { icon: "code", title: "Javascript" }, { icon: "code", title: "CSS" },{ icon: "code_blocks", title: "JQuery" },{ icon: "code", title: "Canvas" },{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" },{ icon: "code", title: "Java" }, { icon: "code_blocks", title: "Android" },{ icon: "database", title: "Firebase" }]
     },
     {
+      year: "2016",
       icon: "../../assets/runkick/icon.jpg",
       title: 'Runkick',
       subtitle: 'A multiplayer football videogame to test your reflexes',
@@ -140,6 +148,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "Swift" }, { icon: "code_blocks", title: "UIKit" }, { icon: "code_blocks", title: "SpriteKit" },{ icon: "database", title: "Firebase" },{ icon: "cycle", title: "ARC Management" }]
     },
     {
+      year: "2019",
       icon: "../../assets/flue/icon.jpg",
       title: 'Flue',
       subtitle: 'A mind-blowing 3D video game that will get you hooked',
@@ -157,6 +166,7 @@ export class HomepageComponent {
       skills: [{ icon: "code", title: "C#" }, { icon: "code_blocks", title: "Unity" }, { icon: "cycle", title: "Multithreading" }]
     },
     {
+      year: "2019",
       icon: "../../assets/passions/icon.png",
       title: 'Passions',
       subtitle: 'A social network designed to connect individuals who share your passions',
@@ -187,7 +197,7 @@ export class HomepageComponent {
       logoPath: '../../assets/companies/codedix.png',
       companyName: 'Codedix',
       description: '',
-      role: "iOS Engineer • Co-founder"
+      role: "Software Engineer • Co-founder"
     },
     {
       startDate: 'Jul 2020',
@@ -197,14 +207,14 @@ export class HomepageComponent {
       description: '',
       role: "Software Engineer"
     },
-    {
+    /*{
       startDate: 'Feb 2020',
       endDate: 'Jul 2020',
       logoPath: '../../assets/companies/unict.png',
       companyName: 'Unict Information Systems',
       description: '',
       role: "iOS Engineer"
-    },
+    },*/
     /*{
       startDate: 'Mar 2019',
       endDate: 'Feb 2020',
@@ -221,5 +231,32 @@ export class HomepageComponent {
       description: '',
       role: "Front-End developer • Internship"
     },*/
+  ]
+
+  degrees: Experience[] = [
+    {
+      startDate: 'Aug 2023',
+      endDate: 'Present',
+      logoPath: '../../assets/companies/unict.png',
+      companyName: 'University of Catania',
+      description: '',
+      role: "PhD • Computer Science"
+    },
+    {
+      startDate: 'Sep 2020',
+      endDate: 'Apr 2023',
+      logoPath: '../../assets/companies/unict.png',
+      companyName: 'University of Catania',
+      description: '',
+      role: "Master • Computer Science"
+    },
+    {
+      startDate: 'Sep 2018',
+      endDate: 'Sep 2020',
+      logoPath: '../../assets/companies/unict.png',
+      companyName: 'University of Catania',
+      description: '',
+      role: "Bachelor • Computer Science"
+    },
   ]
 }

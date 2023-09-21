@@ -2,13 +2,13 @@
     <div class="homepage">
         <section class="header">
             <div class="self-description">
-                <img src="../../assets/animoji.jpg" alt="Profile Image">
+                <img src="../../assets/animoji.jpg" alt="Profile Image"  loading="lazy">
                 <p class="name">Simone Scionti</p>
-                <p class="job-title">iOS Software Engineer</p>
+                <p class="job-title">Software Engineer</p>
 
                 <div class="main-tip">
                     <p class="text-tip text-gradient-h">What inspires me?</p>
-                    <p class="text-tip"> Walking around and see people loving the apps I've worked on</p>
+                    <p class="text-tip"> Building products for people</p>
                 </div>
                 <!-- <img class="arrow" src="../../assets/arrow.png"> -->
             </div>
@@ -18,8 +18,8 @@
             <div id="description">
                 <p class="section-title">About me</p>
                 <p class="text-tip"> Hello! I'm Simone Scionti. I'm a curious and disciplined software engineer with a
-                    deep interest in Apple technologies.
-                    <br>I'm proficient in iOS native mobile development and have knowledge about cloud serverless
+                    deep interest in mobile development.
+                    <br>I'm proficient in iOS native development and have knowledge about cloud serverless
                     architectures on AWS.
                     <br>With a keen eye for design patterns, I adhere to industry best practices maximizing reuse and
                     promoting maintainability.
@@ -29,7 +29,7 @@
                 <p class="text-tip text-gradient-v">
                     During my career, I had experience in several aspects of software engineering. Over the years I've
                     covered the figures of Full-stack developer, Software Engineer and iOS Engineer. Later I decided to
-                    follow my passion for mobile development by consolidating my knowledge about the Apple ecosystem and
+                    follow my passion for mobile development by consolidating my knowledge about the iOS ecosystem and
                     approaching multi-platform mobile technologies such as Flutter.
                     <br>Recently I started my PhD on Artificial Intelligence applied to cultural heritage, a discipline
                     I’m curious about.
@@ -37,6 +37,58 @@
                 <br>
             </div>
             <br>
+            <!-- <p class="section-title">Education</p>
+            <div class="history">
+                <div class="timeline">
+                    <div class="timeline-item" *ngFor="let degree of degrees;let i = index">
+                        <div class="segment before">
+                            <ng-container *ngIf="i != 0">
+                                <div class="left-gradient-line"></div>
+                            </ng-container>
+                            <ng-container *ngIf="i == 0">
+                                <div class="start-spacing"></div>
+                            </ng-container>
+                            <ng-container>
+                                <div class="circle"></div>
+                            </ng-container>
+
+                            <ng-container *ngIf="i < experiences.length-1">
+                                <div class="right-gradient-line"></div>
+                            </ng-container>
+                        </div>
+                        <div class="comp-details">
+                            <div class="company-logo">
+                                <img [src]="degree.logoPath" alt="Logo {{ degree.companyName }}">
+                            </div>
+
+                            <p class="company-name">{{ degree.companyName }}</p>
+                            <p class="role-name text-gradient-h">{{ degree.role }}</p>
+                            <div class="dates text-gradient-h">
+                                <p>{{ degree.startDate }}</p>
+                                <p class="divider">-</p>
+                                <p>{{ degree.endDate }}</p>
+                            </div>
+                        </div>
+                        <div class="segment after">
+                            <ng-container *ngIf="i != 0">
+                                <div class="left-gradient-line"></div>
+                            </ng-container>
+                            <ng-container *ngIf="i == 0">
+                                <div class="start-spacing"></div>
+                            </ng-container>
+                            <ng-container>
+                                <div class="circle"></div>
+                            </ng-container>
+
+                            <ng-container *ngIf="i < degrees.length-1">
+                                <div class="right-gradient-line"></div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <p class="section-title">Work experience</p> -->
             <div class="history">
                 <div class="timeline">
                     <div class="timeline-item" *ngFor="let experience of experiences;let i = index">
@@ -57,7 +109,7 @@
                         </div>
                         <div class="comp-details">
                             <div class="company-logo">
-                                <img [src]="experience.logoPath" alt="Logo {{ experience.companyName }}">
+                                <img [src]="experience.logoPath" alt="Logo {{ experience.companyName }}" loading="lazy">
                             </div>
 
                             <p class="company-name">{{ experience.companyName }}</p>
@@ -93,8 +145,15 @@
             <div *ngFor="let project of projects" class="project"
                 [style.background]="'linear-gradient(#000000,'+project.gradientColor+' , '+project.gradientColor+', #000000)'">
                 <div class="trademark">
-                    <img [src]="project.icon" class="icon">
-                    <p class="app-title">{{project.title}}</p>
+                    <div class="year" [style.background-color]="project.buttonsColor"> <p class="text-tip text-gradient"
+                        [style.background]="'linear-gradient(to right,#FFFFFF , '+project.textGradientColor+')'">
+                       {{project.year}}
+                    </p></div>
+                    <div class="flex">
+                        <img [src]="project.icon" class="icon"  loading="lazy">
+                        <p class="app-title">{{project.title}}</p>
+                    </div>
+                    <div class= "right-spacer"></div>
                 </div>
 
                 <p class="app-subtitle text-gradient"
@@ -114,23 +173,23 @@
 
                 <div class="screenshots">
                     <div class="lateral">
-                        <img *ngIf="project.leftScreenshot" [src]="project.leftScreenshot">
+                        <img *ngIf="project.leftScreenshot" [src]="project.leftScreenshot"  loading="lazy">
                     </div>
                     <div *ngFor="let screen of project.centeredScreenshots" class="center">
-                        <img [src]="screen">
+                        <img [src]="screen"  loading="lazy">
                     </div>
                     <div *ngIf="project.webScreenshot" class="center web">
-                        <img [src]="project.webScreenshot">
+                        <img [src]="project.webScreenshot"  loading="lazy">
                     </div>
                     <div *ngIf="project.webVideo" class="center web">
-                        <video #video [src]="project.webVideo" [muted]="true" autoplay playsinline loop></video>
+                        <video #video [src]="project.webVideo" [muted]="true" autoplay playsinline loop  loading="lazy"></video>
                     </div>
                     <div *ngIf="project.centeredVideo" class="center">
-                        <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop></video>
+                        <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop  loading="lazy"></video>
                     </div>
 
                     <div class="lateral">
-                        <img *ngIf="project.rightScreenshot" [src]="project.rightScreenshot">
+                        <img *ngIf="project.rightScreenshot" [src]="project.rightScreenshot"  loading="lazy">
                     </div>
                 </div>
 

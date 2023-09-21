@@ -16,6 +16,7 @@ export interface Project{
     gradientColor: string;
     textGradientColor: string;
     buttonsColor: string;
+    year: string;
 }
 
 export interface FeatureSection{
