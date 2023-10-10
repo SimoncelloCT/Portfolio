@@ -46,7 +46,6 @@
       border-radius: calc(200px * var(--current-zoom));
       border: 1px solid #000000;
       box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
-
     }
 
     .name {
@@ -83,6 +82,7 @@
     display: flex;
   }
 
+
   .right-spacer{
       width: calc(180px * var(--current-zoom)) !important;
       margin: calc(20px * var(--current-zoom));;
@@ -104,7 +104,7 @@
         }
         p.app-title{
             margin:auto;
-            padding-left: 20px;
+            padding-left:  calc(20px* var(--current-zoom));
             font-size: calc(3rem * var(--current-zoom));
             font-family: var(--alias-main);
             font-weight: normal;

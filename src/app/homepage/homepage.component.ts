@@ -31,12 +31,12 @@ export class HomepageComponent {
     },
     {
       year: "2023",
-      icon: "../../assets/guardian/logo.jpg",
+      icon: "../../assets/guardian/logo.webp",
       title: 'Guardian',
       subtitle: 'A multi-platform mobile app that helps you to walk safely in your city',
-      leftScreenshot: "../../assets/guardian/screen-1.PNG",
-      rightScreenshot: "./../assets/guardian/screen-4.PNG",
-      centeredScreenshots: ["../../assets/guardian/screen-2.PNG", "../../assets/guardian/screen-3.PNG"],
+      leftScreenshot: "../../assets/guardian/screen-1.webp",
+      rightScreenshot: "./../assets/guardian/screen-4.webp",
+      centeredScreenshots: ["../../assets/guardian/screen-2.PNG", "../../assets/guardian/screen-3.webp"],
       links: [
         { type: "AppStore", url: "https://apps.apple.com/app/guardian/id1665898466", text: "See on App Store" },
         { type: "AppStore", url: "https://play.google.com/store/apps/details?id=com.letss.guardian", text: "See on Play Store" },
@@ -49,15 +49,15 @@ export class HomepageComponent {
     },
     {
       year: "2023",
-      icon: "../../assets/csm/icon.png",
+      icon: "../../assets/csm/icon.webp",
       title: 'CSM',
       subtitle: 'A cloud-native platform for managing construction sites',
       links: [
         { type: "Web", url: "https://drive.google.com/file/d/12x6RzmksE7RArqAVwmjBDE_nLsuqdU9b/view?usp=sharing", text: "See project paper" },
       ],
-      leftScreenshot: "../../assets/csm/screen1.png",
-      rightScreenshot: "./../assets/csm/screen3.png",
-      webScreenshot: "../../assets/csm/screen2.png",
+      leftScreenshot: "../../assets/csm/screen1.webp",
+      rightScreenshot: "./../assets/csm/screen3.webp",
+      webScreenshot: "../../assets/csm/screen2.webp",
       gradientColor: "#7c131c",//"#73B92F",
       textGradientColor: "#ff727e",
       buttonsColor: "#88c9fa51",
@@ -84,12 +84,12 @@ export class HomepageComponent {
     },
     {
       year: "2022",
-      icon: "../../assets/easybooking/logo.png",
+      icon: "../../assets/easybooking/logo.webp",
       title: 'EasyBooking',
       subtitle: 'A complete platform to manage bookings for sports, beauty and hairdressers',
-      leftScreenshot: "../../assets/easybooking/screen1.png",
-      rightScreenshot: "./../assets/easybooking/screen3.png",
-      webScreenshot: "./../assets/easybooking/web.png",
+      leftScreenshot: "../../assets/easybooking/screen1.webp",
+      rightScreenshot: "./../assets/easybooking/screen3.webp",
+      webScreenshot: "./../assets/easybooking/web.webp",
       links: [
         { type: "Web", url: "https://easybookingapp.it/welcome", text: "See on the Web" },
         { type: "Web", url: "https://demo-sport.easybookingapp.it/login", text: "Try the demo" },
@@ -186,15 +186,15 @@ export class HomepageComponent {
     {
       startDate: 'Aug 2023',
       endDate: 'Present',
-      logoPath: '../../assets/companies/ovolab.png',
+      logoPath: '../../assets/companies/ovolab.webp',
       companyName: 'Ovolab',
       description: '',
       role: "iOS Engineer"
     },
     {
       startDate: 'Nov 2022',
-      endDate: 'Present',
-      logoPath: '../../assets/companies/codedix.png',
+      endDate: 'Jul 2023',
+      logoPath: '../../assets/companies/codedix.webp',
       companyName: 'Codedix',
       description: '',
       role: "Software Engineer • Co-founder"
@@ -202,7 +202,7 @@ export class HomepageComponent {
     {
       startDate: 'Jul 2020',
       endDate: 'Nov 2022',
-      logoPath: '../../assets/companies/bax.png',
+      logoPath: '../../assets/companies/bax.webp',
       companyName: 'BaxEnergy',
       description: '',
       role: "Software Engineer"
@@ -237,7 +237,7 @@ export class HomepageComponent {
     {
       startDate: 'Aug 2023',
       endDate: 'Present',
-      logoPath: '../../assets/companies/unict.png',
+      logoPath: '../../assets/companies/unict.webp',
       companyName: 'University of Catania',
       description: '',
       role: "PhD • Computer Science"
@@ -245,7 +245,7 @@ export class HomepageComponent {
     {
       startDate: 'Sep 2020',
       endDate: 'Apr 2023',
-      logoPath: '../../assets/companies/unict.png',
+      logoPath: '../../assets/companies/unict.webp',
       companyName: 'University of Catania',
       description: '',
       role: "Master • Computer Science"
@@ -253,7 +253,7 @@ export class HomepageComponent {
     {
       startDate: 'Sep 2018',
       endDate: 'Sep 2020',
-      logoPath: '../../assets/companies/unict.png',
+      logoPath: '../../assets/companies/unict.webp',
       companyName: 'University of Catania',
       description: '',
       role: "Bachelor • Computer Science"

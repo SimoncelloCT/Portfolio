@@ -2,7 +2,7 @@
     <div class="homepage">
         <section class="header">
             <div class="self-description">
-                <img src="../../assets/animoji.jpg" alt="Profile Image"  loading="lazy">
+                <img src="../../assets/animoji.webp" alt="Profile Image"  >
                 <p class="name">Simone Scionti</p>
                 <p class="job-title">Software Engineer</p>
 
@@ -109,7 +109,7 @@
                         </div>
                         <div class="comp-details">
                             <div class="company-logo">
-                                <img [src]="experience.logoPath" alt="Logo {{ experience.companyName }}" loading="lazy">
+                                <img [src]="experience.logoPath" alt="Logo {{ experience.companyName }}" >
                             </div>
 
                             <p class="company-name">{{ experience.companyName }}</p>
@@ -150,7 +150,7 @@
                        {{project.year}}
                     </p></div>
                     <div class="flex">
-                        <img [src]="project.icon" class="icon"  loading="lazy">
+                        <img [src]="project.icon" class="icon"  >
                         <p class="app-title">{{project.title}}</p>
                     </div>
                     <div class= "right-spacer"></div>
@@ -173,23 +173,23 @@
 
                 <div class="screenshots">
                     <div class="lateral">
-                        <img *ngIf="project.leftScreenshot" [src]="project.leftScreenshot"  loading="lazy">
+                        <img *ngIf="project.leftScreenshot" [src]="project.leftScreenshot"  >
                     </div>
                     <div *ngFor="let screen of project.centeredScreenshots" class="center">
-                        <img [src]="screen"  loading="lazy">
+                        <img [src]="screen"  >
                     </div>
                     <div *ngIf="project.webScreenshot" class="center web">
-                        <img [src]="project.webScreenshot"  loading="lazy">
+                        <img [src]="project.webScreenshot"  >
                     </div>
                     <div *ngIf="project.webVideo" class="center web">
-                        <video #video [src]="project.webVideo" [muted]="true" autoplay playsinline loop  loading="lazy"></video>
+                        <video #video [src]="project.webVideo" [muted]="true" autoplay playsinline loop  ></video>
                     </div>
                     <div *ngIf="project.centeredVideo" class="center">
-                        <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop  loading="lazy"></video>
+                        <video #video [src]="project.centeredVideo" [muted]="true" autoplay playsinline loop  ></video>
                     </div>
 
                     <div class="lateral">
-                        <img *ngIf="project.rightScreenshot" [src]="project.rightScreenshot"  loading="lazy">
+                        <img *ngIf="project.rightScreenshot" [src]="project.rightScreenshot"  >
                     </div>
                 </div>
 
