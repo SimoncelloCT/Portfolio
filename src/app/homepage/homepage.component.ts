@@ -197,7 +197,7 @@ export class HomepageComponent {
       logoPath: '../../assets/companies/codedix.webp',
       companyName: 'Codedix',
       description: '',
-      role: "Software Engineer • Co-founder"
+      role: "iOS Engineer • Co-founder"
     },
     {
       startDate: 'Jul 2020',
