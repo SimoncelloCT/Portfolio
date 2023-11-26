@@ -36,7 +36,7 @@ export class HomepageComponent {
       subtitle: 'A multi-platform mobile app that helps you to walk safely in your city',
       leftScreenshot: "../../assets/guardian/screen-1.webp",
       rightScreenshot: "./../assets/guardian/screen-4.webp",
-      centeredScreenshots: ["../../assets/guardian/screen-2.PNG", "../../assets/guardian/screen-3.webp"],
+      centeredScreenshots: ["../../assets/guardian/screen-2.webp", "../../assets/guardian/screen-3.webp"],
       links: [
         { type: "AppStore", url: "https://apps.apple.com/app/guardian/id1665898466", text: "See on App Store" },
         { type: "AppStore", url: "https://play.google.com/store/apps/details?id=com.letss.guardian", text: "See on Play Store" },
