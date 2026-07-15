@@ -184,8 +184,16 @@ export class HomepageComponent {
 
   experiences: Experience[] = [
     {
-      startDate: 'Aug 2023',
+      startDate: 'Apr 2024',
       endDate: 'Present',
+      logoPath: '../../assets/companies/qonto.webp',
+      companyName: 'Qonto',
+      description: '',
+      role: "Staff iOS Engineer"
+    },
+    {
+      startDate: 'Aug 2023',
+      endDate: 'Apr 2024',
       logoPath: '../../assets/companies/ovolab.webp',
       companyName: 'Ovolab',
       description: '',
@@ -234,14 +242,6 @@ export class HomepageComponent {
   ]
 
   degrees: Experience[] = [
-    {
-      startDate: 'Aug 2023',
-      endDate: 'Present',
-      logoPath: '../../assets/companies/unict.webp',
-      companyName: 'University of Catania',
-      description: '',
-      role: "PhD • Computer Science"
-    },
     {
       startDate: 'Sep 2020',
       endDate: 'Apr 2023',
