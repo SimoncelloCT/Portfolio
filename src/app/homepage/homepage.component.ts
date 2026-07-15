@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { Project } from './Models/Project';
 import { Experience } from './Models/Experience';
 
@@ -8,6 +8,11 @@ import { Experience } from './Models/Experience';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
+
+  @HostBinding('style.--timeline-items-count')
+  get timelineItemsCount(): number {
+    return this.experiences.length;
+  }
 
   projects: Project[] = [
     {

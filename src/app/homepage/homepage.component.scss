@@ -2,7 +2,7 @@
   --alias-main: 'SequelSansHeadline', sans-serif;
   --alias-alt: 'SharpGroteskBook20', sans-serif;
   --current-zoom: 1.0;
-  --timeline-line-vw: 28vw;
+  --timeline-line-vw: min(28vw, calc((100vw - 200px) / var(--timeline-items-count, 4)));
   --timeline-line-height-mobile: 230px;
 }
 
